@@ -5,10 +5,10 @@ go:
   - master
 
 before_install:
-  - apt-get install build-essential libssl-dev git -y
+  - sudo apt-get install build-essential libssl-dev git -y
   - git clone https://github.com/wg/wrk.git wrk
   - cd wrk && make
-  - cp wrk /usr/local/bin/
+  - sudo cp wrk /usr/local/bin/
 
 script:
   - go build -o gowebbenchmark -v .
