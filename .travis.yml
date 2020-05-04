@@ -4,6 +4,12 @@ go:
   - 1.14.x
   - master
 
+before_script:
+  - apt-get install build-essential libssl-dev git -y
+  - git clone https://github.com/wg/wrk.git wrk
+  - cd wrk && make
+  - cp wrk /usr/local/bin/
+
 script:
-  - go build -v .
+  - go build -o gowebbenchmark -v .
   - ./test-all.sh
