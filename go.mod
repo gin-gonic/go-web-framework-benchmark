@@ -19,7 +19,7 @@ require (
 	github.com/emicklei/go-restful v2.12.0+incompatible
 	github.com/fasthttp/router v1.0.0
 	github.com/fatih/color v1.9.0 // indirect
-	github.com/gin-gonic/gin v1.6.2
+	github.com/gin-gonic/gin v1.6.3
 	github.com/go-macaron/inject v0.0.0-20200308113650-138e5925c53b // indirect
 	github.com/go-martini/martini v0.0.0-20170121215854-22fa46961aab
 	github.com/go-ozzo/ozzo-routing v2.1.4+incompatible

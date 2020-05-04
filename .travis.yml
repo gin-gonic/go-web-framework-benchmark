@@ -1,17 +1,9 @@
 language: go
 
 go:
-  - tip
-  - 1.13.x
-
-before_script:
-  - go mod download
+  - 1.14.x
+  - master
 
 script:
-  - go build .
-
-notifications:
-  email:
-    recipients: smallnest@gmail.com
-    on_success: change
-    on_failure: always
+  - go build -v .
+  - ./test-all.sh
