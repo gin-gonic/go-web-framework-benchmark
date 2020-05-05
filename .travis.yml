@@ -12,4 +12,4 @@ before_install:
 
 script:
   - go build -o gowebbenchmark -v .
-  - ./test-all.sh
+  - ./test.sh
